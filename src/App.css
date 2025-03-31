@@ -12,3 +12,17 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+/* Importing fonts */
+@font-face {
+  font-family: 'VietXua1';
+  src: url('/DFVN STAMPA V1.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Typing';
+  src: url('/iCielBCOldStyle-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

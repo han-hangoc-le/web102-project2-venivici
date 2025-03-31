@@ -1,18 +1,51 @@
 .maincard {
-    /* width: 30vw;
-    height: 70vh;
-    background-color: burlywood; */
     padding: 30px;
     text-align: center;
-    background: rgba(49, 49, 49, .87);
+    background: linear-gradient(#22283f, #0f1138);
     color: #fff;
     border-radius: 10px;
     width: 650px;
-    box-shadow: 0 4px 8px #f5f5f533, 0 6px 20px #fdfdfd30;
+    box-shadow: 0 0px 10px #FFC95C;
     height: 750px;
 }
 
 .image {
     max-height: 40%;
     max-width: 80%;
+    box-shadow: 0 0px 20px #cfb88a;
+}
+
+.webtitle {
+    font-family: 'VietXua1';
+    color: #f0cd88;
+    margin: 0;
+    padding-top: 2%;
+}
+
+.artworkTitle {
+    color: #ffe8b9;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 94%;
+    gap: 5%;
+    margin-bottom: 5%;
+}
+
+.attribute {
+    background-color: #dcb565;
+    color: #1a1c4f;
+    font-weight: bolder;
+    box-shadow: 0 0px 10px #c6ba74;
+}
+
+.button {
+    background-color: #4754a1;
+    color: #fceb98;
+    font-weight: bold;
+    box-shadow: 0 0px 15px rgb(109, 112, 179);
 }

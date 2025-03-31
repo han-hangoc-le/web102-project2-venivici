@@ -5,7 +5,10 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-image: linear-gradient(#22283f, #0f1138);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bgimg.avif");;
+  background-size: cover;
+  background-position: fixed;
+  background-color: linear-gradient(#22283f, #0f1138);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

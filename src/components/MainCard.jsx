@@ -64,14 +64,14 @@ export default function MainCard() {
     return (
         <>
             <div className='maincard'>
-                <h1>Explore the MET</h1>
+                <h1 className='webtitle'>Explore the MET</h1>
                 <h2>What is there in the MET?</h2>
                 {artwork && (
                     <>
                         <img src={artwork.primaryImage} alt={artwork.title} className='image'/>
-                        <h3>{artwork.title}</h3>
+                        <h3 className='artworkTitle'>{artwork.title}</h3>
                         <h4>Artist: {artwork.artistDisplayName}</h4>
-                        <div className='buttonGroups'>
+                        <div className='buttonGroup'>
                             <button type='attribute' className='attribute' onClick={null}>Dept: {artwork.department || "N/A"}</button>
                             <button type='attribute' className='attribute' onClick={null}>Period: {artwork.period || "N/A"}</button>
                             <button type='attribute' className='attribute' onClick={null}>Nationality: {artwork.artistNationality || "N/A"}</button>
