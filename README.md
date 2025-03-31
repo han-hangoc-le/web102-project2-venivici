@@ -1,10 +1,10 @@
-# Web Development Project 4 - *Name of App Here*
+# Web Development Project 4 - *Explore the Met*
 
-Submitted by: **Your Name Here**
+Submitted by: **Han Le**
 
-This web app: **insert description**
+This web app: **A website to learn more about what the MET musem has to offer**
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
@@ -14,18 +14,14 @@ The following **required** functionality is completed:
 - [x] **Only one item/API call is viewable at a time**
 - [x] **API calls appear random to the user**
 - [x] **At least one image is displayed per API call**
-- [ ] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
-  - [ ] To ensure an accurate grade, your recording **must** show that when clicked, an attribute in the ban list is immediately removed from the list of banned attributes
-- [ ] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
+- [x] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
+  - [x] To ensure an accurate grade, your recording **must** show that when clicked, an attribute in the ban list is immediately removed from the list of banned attributes
+- [x] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
 
 The following **optional** features are implemented:
 
-- [ ] Multiple types of attributes can be added to the ban list
-- [ ] Users can see a stored history of their previously viewed items from their session
-
-The following **additional** features are implemented:
-
-* [ ] List anything else that you added to improve the site's functionality!
+- [x] Multiple types of attributes can be added to the ban list
+- [x] Users can see a stored history of their previously viewed items from their session
 
 ## Video Walkthrough
 
@@ -33,20 +29,16 @@ Here's a walkthrough of implemented user stories:
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+- I had difficulty filter the MET artwork data as the database is very large and complicated.
+- Besides, I leanred more about useStaet and useEffect in this project!
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2025] [Han Le]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

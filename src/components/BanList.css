@@ -1,19 +1,24 @@
 .banContainer {
-    /* width: 10vw;
-    height: 70vh;
-    background-color: burlywood; */
     height: 100%;
     width: 20%;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: #d2d2d2;
-    color: #000;
+    background: #0f11389d;
+    color: #fff2d9;
     padding: 15px 15px 15px 10px;
     display: flex;
-    
     overflow-y: scroll;
     flex-direction: column;
     align-items: center;
+}
+
+.banItemButton {
+    background-color: #dcb565;
+    color: #1a1c4f;
+    font-weight: bolder;
+    box-shadow: 0 0px 10px #c6ba74;
+    font-size: 94%;
+    margin-bottom: 20px;
 }

@@ -1,7 +1,7 @@
 import './MainCard.css'
 import { useEffect, useState } from 'react';
 
-export default function MainCard() {
+export default function MainCard({ addToBanList, setSeenArtworks, banList }) {
     const objectsUrl = "https://collectionapi.metmuseum.org/public/collection/v1/objects"
     
     
@@ -47,10 +47,15 @@ export default function MainCard() {
                     data.department &&
                     data.period &&
                     data.artistNationality &&
-                    data.classification
+                    data.classification &&
+                    !banList.includes(data.department) &&
+                    !banList.includes(data.period) &&
+                    !banList.includes(data.artistNationality) &&
+                    !banList.includes(data.classification)
                 ) {
                     validArtwork = data
                     setArtwork(data);
+                    setSeenArtworks((prev) => [...prev, validArtwork]);
                 } else {
                     console.warn("Invalid artwork - skipping:", data)
                 }
@@ -72,10 +77,10 @@ export default function MainCard() {
                         <h3 className='artworkTitle'>{artwork.title}</h3>
                         <h4>Artist: {artwork.artistDisplayName}</h4>
                         <div className='buttonGroup'>
-                            <button type='attribute' className='attribute' onClick={null}>Dept: {artwork.department || "N/A"}</button>
-                            <button type='attribute' className='attribute' onClick={null}>Period: {artwork.period || "N/A"}</button>
-                            <button type='attribute' className='attribute' onClick={null}>Nationality: {artwork.artistNationality || "N/A"}</button>
-                            <button type='attribute' className='attribute' onClick={null}>Classification: {artwork.classification || "N/A"}</button>
+                            <button type='attribute' className='attribute' onClick={() => addToBanList(artwork.department)}>Dept: {artwork.department || "N/A"}</button>
+                            <button type='attribute' className='attribute' onClick={() => addToBanList(artwork.period)}>Period: {artwork.period || "N/A"}</button>
+                            <button type='attribute' className='attribute' onClick={() => addToBanList(artwork.artistNationality)}>Nationality: {artwork.artistNationality || "N/A"}</button>
+                            <button type='attribute' className='attribute' onClick={() => addToBanList(artwork.classification)}>Classification: {artwork.classification || "N/A"}</button>
                         </div>
 
                     </>
