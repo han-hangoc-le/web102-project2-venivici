@@ -1,0 +1,18 @@
+.maincard {
+    /* width: 30vw;
+    height: 70vh;
+    background-color: burlywood; */
+    padding: 30px;
+    text-align: center;
+    background: rgba(49, 49, 49, .87);
+    color: #fff;
+    border-radius: 10px;
+    width: 650px;
+    box-shadow: 0 4px 8px #f5f5f533, 0 6px 20px #fdfdfd30;
+    height: 750px;
+}
+
+.image {
+    max-height: 40%;
+    max-width: 80%;
+}
